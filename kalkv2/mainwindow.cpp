@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/PiszeQ/Desktop/2 rok 1 semestr/Projekt/Zdjęcia/slonce_pl.jpg");
+    QPixmap pix(":/zasoby/zasoby/slonce_pl.jpg");
     int w = ui->naslonecznienie->width();
     int h = ui->naslonecznienie->height();
     ui->naslonecznienie->setPixmap(pix.scaled(w,h,Qt::KeepAspectRatio));
