@@ -16,6 +16,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
@@ -55,17 +56,18 @@ public:
     QLabel *naslonecznienie;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout_7;
-    QRadioButton *radioButton_8;
-    QRadioButton *radioButton_9;
-    QRadioButton *radioButton_10;
-    QRadioButton *radioButton_11;
+    QRadioButton *radioButton41;
+    QRadioButton *radioButton42;
+    QRadioButton *radioButton43;
+    QRadioButton *radioButton44;
     QWidget *tab_4;
     QVBoxLayout *verticalLayout;
     QLabel *label_4;
     QLineEdit *lineEdit;
     QWidget *tab_6;
     QLabel *label_6;
-    QLabel *label_7;
+    QLabel *label_rachunek;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -184,25 +186,25 @@ public:
         verticalLayout_7 = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         verticalLayout_7->setContentsMargins(0, 0, 0, 0);
-        radioButton_8 = new QRadioButton(verticalLayoutWidget);
-        radioButton_8->setObjectName(QString::fromUtf8("radioButton_8"));
+        radioButton41 = new QRadioButton(verticalLayoutWidget);
+        radioButton41->setObjectName(QString::fromUtf8("radioButton41"));
 
-        verticalLayout_7->addWidget(radioButton_8);
+        verticalLayout_7->addWidget(radioButton41);
 
-        radioButton_9 = new QRadioButton(verticalLayoutWidget);
-        radioButton_9->setObjectName(QString::fromUtf8("radioButton_9"));
+        radioButton42 = new QRadioButton(verticalLayoutWidget);
+        radioButton42->setObjectName(QString::fromUtf8("radioButton42"));
 
-        verticalLayout_7->addWidget(radioButton_9);
+        verticalLayout_7->addWidget(radioButton42);
 
-        radioButton_10 = new QRadioButton(verticalLayoutWidget);
-        radioButton_10->setObjectName(QString::fromUtf8("radioButton_10"));
+        radioButton43 = new QRadioButton(verticalLayoutWidget);
+        radioButton43->setObjectName(QString::fromUtf8("radioButton43"));
 
-        verticalLayout_7->addWidget(radioButton_10);
+        verticalLayout_7->addWidget(radioButton43);
 
-        radioButton_11 = new QRadioButton(verticalLayoutWidget);
-        radioButton_11->setObjectName(QString::fromUtf8("radioButton_11"));
+        radioButton44 = new QRadioButton(verticalLayoutWidget);
+        radioButton44->setObjectName(QString::fromUtf8("radioButton44"));
 
-        verticalLayout_7->addWidget(radioButton_11);
+        verticalLayout_7->addWidget(radioButton44);
 
         tabWidget->addTab(tab_2, QString());
         tab_4 = new QWidget();
@@ -225,10 +227,13 @@ public:
         tab_6->setObjectName(QString::fromUtf8("tab_6"));
         label_6 = new QLabel(tab_6);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(120, 80, 141, 51));
-        label_7 = new QLabel(tab_6);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setGeometry(QRect(120, 180, 131, 41));
+        label_6->setGeometry(QRect(70, 40, 191, 91));
+        label_rachunek = new QLabel(tab_6);
+        label_rachunek->setObjectName(QString::fromUtf8("label_rachunek"));
+        label_rachunek->setGeometry(QRect(110, 240, 131, 41));
+        pushButton = new QPushButton(tab_6);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(130, 150, 75, 23));
         tabWidget->addTab(tab_6, QString());
 
         formLayout->setWidget(0, QFormLayout::SpanningRole, tabWidget);
@@ -244,7 +249,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(5);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -271,15 +276,16 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QCoreApplication::translate("MainWindow", "Zacienienie", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">Podaj region nas\305\202onecznienia:</span></p></body></html>", nullptr));
         naslonecznienie->setText(QString());
-        radioButton_8->setText(QCoreApplication::translate("MainWindow", "Czerwony", nullptr));
-        radioButton_9->setText(QCoreApplication::translate("MainWindow", "Pomara\305\204czowy", nullptr));
-        radioButton_10->setText(QCoreApplication::translate("MainWindow", "Ciemny \305\274\303\263\305\202ty", nullptr));
-        radioButton_11->setText(QCoreApplication::translate("MainWindow", "Jasny \305\274\303\263\305\202ty", nullptr));
+        radioButton41->setText(QCoreApplication::translate("MainWindow", "Czerwony", nullptr));
+        radioButton42->setText(QCoreApplication::translate("MainWindow", "Pomara\305\204czowy", nullptr));
+        radioButton43->setText(QCoreApplication::translate("MainWindow", "Ciemny \305\274\303\263\305\202ty", nullptr));
+        radioButton44->setText(QCoreApplication::translate("MainWindow", "Jasny \305\274\303\263\305\202ty", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Po\305\202o\305\274enie", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">Wpisz \305\233redni\304\205 cene rachunku za pr\304\205d:</span></p></body></html>", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">Wpisz roczn\304\205 cene rachunku za pr\304\205d (PLN):</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Rachunek", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">Skuteczno\305\233\304\207 istalacji fotowoltaicznej (%):</span></p></body></html>", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_rachunek->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Oblicz", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QCoreApplication::translate("MainWindow", "Instalacja", nullptr));
     } // retranslateUi
 

@@ -36,6 +36,20 @@ private slots:
 
     void on_radioButton33_clicked();
 
+    void on_radioButton41_clicked();
+
+    void on_radioButton42_clicked();
+
+    void on_radioButton43_clicked();
+
+    void on_radioButton44_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
