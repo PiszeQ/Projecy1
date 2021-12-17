@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/zasoby">
+        <file>zasoby/slonce_pl.jpg</file>
+    </qresource>
+</RCC>
